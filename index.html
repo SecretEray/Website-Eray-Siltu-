@@ -1,74 +1,762 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-<meta charset="utf-8">
-<title>Turkish dev.</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <script src="buttons.js">
-    </script>
-    <nav>
-        <h1>Turkish Developer.</h1>  
-        <a href="#">Projects</a>
-        <a href="#">Projects</a>
-        <a href="#">About</a>
-      </nav>
-<div class='loader-container'>
-    <div class='rocket-container'>
-      <div class='structure'>
-        <svg height='352' id='rocket-svg' version='1.1' viewbox='0 0 59.266662 93.133333' width='224' xmlns='http://www.w3.org/2000/svg'>
-          <g id='layer2' transform='translate(-33.866666,-33.866666)'>
-            <path d='m 296,336 a 8.0000078,8.0000078 0 0 0 -8,8 v 80 a 8.0000078,7.9999501 0 0 0 1.16406,4.14062 l -0.22461,0.11329 49.32227,49.32031 0.0781,0.0801 0.004,-0.004 A 7.9999934,8.0000655 0 0 0 344,480 a 7.9999934,8.0000655 0 0 0 8,-8 v -80 a 7.9999934,7.9998924 0 0 0 -2.34961,-5.65625 l 0.004,-0.004 -48.00391,-48.00195 -0.004,0.002 A 8.0000078,8.0000078 0 0 0 296,336 Z' id='right-wing' style='opacity:1;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1' transform='scale(0.26458333)'></path>
-            <path d='m 184,336 a 8.0000006,8.0000078 0 0 0 -5.65234,2.3457 l -0.004,-0.002 -47.91797,47.91797 -0.082,0.082 0.004,0.002 A 8.0000078,7.9998924 0 0 0 128,392 v 80 a 8.0000078,8.0000655 0 0 0 8,8 8.0000078,8.0000655 0 0 0 5.65625,-2.34961 l 0.004,0.004 49.40039,-49.40039 -0.22657,-0.11329 A 8.0000006,7.9999501 0 0 0 192,424 v -80 a 8.0000006,8.0000078 0 0 0 -8,-8 z' id='left-wing' style='opacity:1;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1' transform='scale(0.26458333)'></path>
-            <path d='M 239.96875,128 A 111.99996,124.13082 0 0 0 176,240 l 16,200 a 8.0000006,8.0000655 0 0 0 8,8 h 80 a 8.0000078,8.0000655 0 0 0 8,-8 L 304,240 A 111.99996,124.13082 0 0 0 239.96875,128 Z' id='rocket-main-part' style='opacity:1;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1' transform='scale(0.26458333)'></path>
-            <path d='m 239.96875,128 a 111.99996,124.13082 0 0 0 -47.77344,48 h 95.51953 a 111.99996,124.13082 0 0 0 -47.74609,-48 z' id='nose' style='opacity:1;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1' transform='scale(0.26458333)'></path>
-            <ellipse cx='63.5' cy='59.266663' id='window-stroke' rx='7.4083333' ry='7.4083328' style='opacity:1;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1'></ellipse>
-            <ellipse cx='63.499996' cy='59.266666' id='window-inner' rx='6.3499975' ry='6.3500061' style='opacity:1;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1'></ellipse>
-            <path d='m 240,336 a 7.9999898,8.0000078 0 0 0 -8,8 v 128 a 7.9999898,8.0000078 0 0 0 8,8 7.9999898,8.0000078 0 0 0 8,-8 V 344 a 7.9999898,8.0000078 0 0 0 -8,-8 z' id='middle-wing' style='opacity:1;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1' transform='scale(0.26458333)'></path>
-            <path d='M 239.96875,128 A 111.99996,124.13082 0 0 0 176,240 l 7.68164,96.01562 a 8.0000006,8.0000078 0 0 0 -5.33398,2.33008 l -0.004,-0.002 -47.91797,47.91797 -0.082,0.082 0.004,0.002 A 8.0000078,7.9998924 0 0 0 128,392 v 80 a 8.0000078,8.0000655 0 0 0 8,8 8.0000078,8.0000655 0 0 0 5.65625,-2.34961 l 0.004,0.004 49.40039,-49.40039 -0.22657,-0.11329 a 8.0000006,7.9999501 0 0 0 0.18946,-0.3496 l 0.0371,0.46289 L 192,440 a 8.0000006,8.0000655 0 0 0 8,8 h 32 v 24 a 7.9999898,8.0000078 0 0 0 8,8 V 336 252 196 128.01758 A 111.99996,124.13082 0 0 0 239.96875,128 Z' id='shadow-layer' style='opacity:0.2;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1' transform='scale(0.26458333)'></path>
-          </g>
-        </svg>
-      </div>
-      <div class='text-container'>
-        <h2>Under construction</h2>
-        <h3>Developing by Eray Siltu</h3>
-        <div id="buttons">
-            <a href="aboutpage.html" class="btn blue">Click on me</a>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <main>
+      <header id="header">
+        <div class="overlay overlay-lg">
+          <img src="./images/shapes/square.png" class="shape square" alt="" />
+          <img src="./images/shapes/circle.png" class="shape circle" alt="" />
+          <img
+            src="./images/shapes/half-circle.png"
+            class="shape half-circle1"
+            alt=""
+          />
+          <img
+            src="./images/shapes/half-circle.png"
+            class="shape half-circle2"
+            alt=""
+          />
+          <img src="./images/shapes/x.png" class="shape xshape" alt="" />
+          <img src="./images/shapes/wave.png" class="shape wave wave1" alt="" />
+          <img src="./images/shapes/points1.png" class="points points1" alt="" />
+        </div>
+
+        <nav>
+          <div class="container">
+            <div class="logo">
+              <img src="" alt="" />
+            </div>
+
+            <div class="links">
+              <ul>
+                <li>
+                  <a href="#header">Home</a>
+                </li>
+                <li>
+                  <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#about">About</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
+                </li>
+                <li>
+                  <a href="#hireme" class="active">Hire me</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
           </div>
-      </div>
-      <div class='smoke'>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-    <div class='meteors-container'>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
-  <div>
-      <div>
-          <div>
-              <div>
-                  <div>
-                  </div>
+        </nav>
+
+        <div class="header-content">
+          <div class="container grid-2">
+            <div class="column-1">
+              <h1 class="header-title">Eray Siltu</h1>
+              <p class="text">
+                Hello, I'm Eray Siltu, Student Software Development. Elhamdullilah for everything .
+              </p>
+              <a href="./images/CV Eray Siltu.pdf" class="btn">Download CV</a>
+            </div>
+
+            <div class="column-2 image">
+              <img
+                src="./images/shapes/points2.png"
+                class="points points2"
+                alt=""
+              />
+              <img src="./images/IMG_8430.png" class="img-element z-index" alt="" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="services section" id="services">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="What I Do">Hmmm...</h3>
+            <p class="text">
+              Study Software Developemnt and developing myself a lot.
+            </p>
+          </div>
+
+          <div class="cards">
+            <div class="card-wrap">
+              <img
+                src="./images/shapes/points3.png"
+                class="points points1 points-sq"
+                alt=""
+              />
+              <div class="card" data-card="UI/UX">
+                <div class="card-content z-index">
+                  <img src="./images/design-icon.png" class="icon" alt="" />
+                  <h3 class="title-sm">Winforms Applications</h3>
+                  <p class="text">
+                    I have recently worked on C# Applications {WINFORMS} how to build them.
+                  </p>
+                  <a href="#" class="btn small">Soon more</a>
+                </div>
               </div>
+            </div>
+
+            <div class="card-wrap">
+              <div class="card" data-card="Code">
+                <div class="card-content z-index">
+                  <img src="./images/code-icon.png" class="icon" alt="" />
+                  <h3 class="title-sm">Web Development</h3>
+                  <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolores suscipit nobis dolore?
+                  </p>
+                  <a href="#" class="btn small">Soon more</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrap">
+              <img
+                src="./images/shapes/points3.png"
+                class="points points2 points-sq"
+                alt=""
+              />
+              <div class="card" data-card="App">
+                <div class="card-content z-index">
+                  <img src="./images/app-icon.png" class="icon" alt="" />
+                  <h3 class="title-sm">App Development</h3>
+                  <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum hic veniam nihil.
+                  </p>
+                  <a href="#" class="btn small">Soon more</a>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <section class="portfolio section" id="portfolio">
+        <div class="background-bg">
+          <div class="overlay overlay-sm">
+            <img
+              src="./images/shapes/half-circle.png"
+              class="shape half-circle1"
+              alt=""
+            />
+            <img
+              src="./images/shapes/half-circle.png"
+              class="shape half-circle2"
+              alt=""
+            />
+            <img src="./images/shapes/square.png" class="shape square" alt="" />
+            <img src="./images/shapes/wave.png" class="shape wave" alt="" />
+            <img src="./images/shapes/circle.png" class="shape circle" alt="" />
+            <img
+              src="./images/shapes/triangle.png"
+              class="shape triangle"
+              alt=""
+            />
+            <img src="./images/shapes/x.png" class="shape xshape" alt="" />
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="My works">Portfolio</h3>
+          </div>
+
+          <div class="section-body">
+            <div class="filter">
+              <button class="filter-btn active" data-filter="*">All</button>
+              <button class="filter-btn" data-filter=".ui">UI/UX</button>
+              <button class="filter-btn" data-filter=".webdev">Web Dev</button>
+              <button class="filter-btn" data-filter=".appdev">
+                Mobile App
+              </button>
+              <button class="filter-btn" data-filter=".logo-design">
+                Logo Design
+              </button>
+            </div>
+
+            <div class="grid">
+              <div class="grid-item logo-design">
+                <div class="gallery-image">
+                  <img src="./images/portfolio/port1.jpg" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Logo Design</h3>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item webdev">
+                <div class="gallery-image">
+                  <img src="./images/portfolio/port2.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Web Development</h3>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item ui webdev">
+                <div class="gallery-image">
+                  <img src="./images/portfolio/port3.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Web Design</h3>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item ui">
+                <div class="gallery-image">
+                  <img src="./images/portfolio/port4.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>UI / UX Design</h3>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item logo-design">
+                <div class="gallery-image">
+                  <img src="./images/portfolio/port5.jpg" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Logo Design</h3>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item appdev">
+                <div class="gallery-image">
+                  <img src="./images/portfolio/port6.jpg" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>App Development</h3>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item logo-design">
+                <div class="gallery-image">
+                  <img src="./images/portfolio/port7.jpg" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Logo Design</h3>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item appdev ui">
+                <div class="gallery-image">
+                  <img src="./images/portfolio/port8.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>App Development</h3>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item ui webdev">
+                <div class="gallery-image">
+                  <img src="./images/portfolio/port9.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Web Design</h3>
+                      <h5>View Demo</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="more-folio">
+              <a href="#" class="btn">More Folio</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Who Am I">About me</h3>
+          </div>
+
+          <div class="section-body grid-2">
+            <div class="column-1">
+              <h3 class="title-sm">Hello, I'm Eray</h3>
+              <p class="text">
+                  Languages which i worked with : HTML5 , CSS , JavaScript , C#.
+              </p>
+              <div class="skills">
+                <div class="skill html">
+                  <h3 class="skill-title">HTML</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="90%"></div>
+                  </div>
+                </div>
+                <div class="skill css">
+                  <h3 class="skill-title">CSS</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="70%"></div>
+                  </div>
+                </div>
+                <div class="skill js">
+                  <h3 class="skill-title">JavaScript</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="80%"></div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn">Soon more</a>
+            </div>
+
+            <div class="column-2 image">
+              <img src="./images/shapes/points4.png" class="points" alt="" />
+              <img src="./images/about-foto.png" class="z-index" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="records">
+        <div class="overlay overlay-sm">
+          <img src="./images/shapes/square.png" alt="" class="shape square1" />
+          <img src="./images/shapes/square.png" alt="" class="shape square2" />
+          <img src="./images/shapes/circle.png" alt="" class="shape circle" />
+          <img
+            src="./images/shapes/half-circle.png"
+            alt=""
+            class="shape half-circle"
+          />
+          <img src="./images/shapes/wave.png" alt="" class="shape wave wave1" />
+          <img src="./images/shapes/wave.png" alt="" class="shape wave wave2" />
+          <img src="./images/shapes/x.png" alt="" class="shape xshape" />
+          <img src="./images/shapes/triangle.png" alt="" class="shape triangle" />
+        </div>
+
+        <div class="container">
+          <div class="wrap">
+            <div class="record-circle">
+              <h2 class="number" data-num="235">0</h2>
+              <h4 class="sub-title">Projects</h4>
+            </div>
+          </div>
+
+          <div class="wrap">
+            <div class="record-circle active">
+              <h2 class="number" data-num="174">0</h2>
+              <h4 class="sub-title">Happy Clients</h4>
+            </div>
+          </div>
+
+          <div class="wrap">
+            <div class="record-circle">
+              <h2 class="number" data-num="892">0</h2>
+              <h4 class="sub-title">Work Hour</h4>
+            </div>
+          </div>
+
+          <div class="wrap">
+            <div class="record-circle">
+              <h2 class="number" data-num="368">0</h2>
+              <h4 class="sub-title">Awards</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog section">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Last News">My blog</h3>
+            <p class="text">
+                This section {Blog} is under construction
+            </p>
+          </div>
+
+          <div class="blog-wrapper">
+            <div class="blog-wrap">
+              <img
+                src="./images/shapes/points3.png"
+                alt=""
+                class="points points-sq"
+              />
+
+              <div class="blog-card">
+                <div class="blog-image">
+                  <img src="./images/blog1.png" alt="" />
+                </div>
+
+                <div class="blog-content">
+                  <div class="blog-info">
+                    <h5 class="blog-date">March, 19 2020</h5>
+                    <h5 class="blog-user"><i class="fas fa-user"></i>Admin</h5>
+                  </div>
+                  <h3 class="title-sm">This is a short title</h3>
+                  <p class="blog-text">
+                    Lorem ipsum, dolor sit amet elit. rem poimus? Tempora
+                    expedita eos autem! Lorem ipsum, dolor sit met.
+                  </p>
+                  <a href="#" class="btn small">Soon more</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-wrap">
+              <div class="blog-card">
+                <div class="blog-image">
+                  <img src="./images/blog2.png" alt="" />
+                </div>
+
+                <div class="blog-content">
+                  <div class="blog-info">
+                    <h5 class="blog-date">August, 02 2020</h5>
+                    <h5 class="blog-user"><i class="fas fa-user"></i>Admin</h5>
+                  </div>
+                  <h3 class="title-sm">This is a short title</h3>
+                  <p class="blog-text">
+                    Lorem ipsum, dolor sit amet elit. Sint atque culpa repellat
+                    sunt sit amet nobis! Lorem ipsum dolor sit amet.
+                  </p>
+                  <a href="#" class="btn small">Soon more</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-wrap">
+              <div class="blog-card">
+                <div class="blog-image">
+                  <img src="./images/blog3.png" alt="" />
+                </div>
+
+                <div class="blog-content">
+                  <div class="blog-info">
+                    <h5 class="blog-date">December, 12 2020</h5>
+                    <h5 class="blog-user"><i class="fas fa-user"></i>Admin</h5>
+                  </div>
+                  <h3 class="title-sm">This is a short title</h3>
+                  <p class="blog-text">
+                    Lorem ipsum dolor sit, amet elit. enim numquam, laborum
+                    earum? Lorem ipsum dolor sit amet.
+                  </p>
+                  <a href="#" class="btn small">Soon more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials section" id="testimonials">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="What People Say">Testimonials</h3>
+          </div>
+
+          <div class="testi-content grid-2">
+            <div class="column-1 reviews">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide review">
+                    <i class="fas fa-quote-left quote"></i>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <p class="review-text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Laudantium adipisci veniam debitis quas, sapiente
+                      repellendus mollitia. Laboriosam labore voluptate quos?
+                    </p>
+
+                    <div class="review-info">
+                      <h3 class="review-name">Matias Butt</h3>
+                      <h5 class="review-job">Photographer, Paris</h5>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide review">
+                    <i class="fas fa-quote-left quote"></i>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <p class="review-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Fugiat voluptate consequatur aut tenetur fugit error
+                      molestiae quaerat ex odio rem?
+                    </p>
+
+                    <div class="review-info">
+                      <h3 class="review-name">Romeo Herbert</h3>
+                      <h5 class="review-job">CEO, Munich</h5>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide review">
+                    <i class="fas fa-quote-left quote"></i>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <p class="review-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Cupiditate voluptatum enim nemo quod amet dolorum aliquam,
+                      sapiente omnis eaque consectetur.
+                    </p>
+
+                    <div class="review-info">
+                      <h3 class="review-name">Jack Costa</h3>
+                      <h5 class="review-job">Director of THR, London</h5>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide review">
+                    <i class="fas fa-quote-left quote"></i>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <p class="review-text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Perspiciatis ab incidunt, dicta quam inventore ipsum
+                      dolor. Consectetur nam incidunt error!
+                    </p>
+
+                    <div class="review-info">
+                      <h3 class="review-name">Reiss Mccartney</h3>
+                      <h5 class="review-job">Engineer, San Francisco</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="review-nav swiper-button-prev">
+                  <i class="fas fa-long-arrow-alt-left"></i>
+                </div>
+                <div class="review-nav swiper-button-next">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="column-2 image">
+              <img src="./images/testi.png" alt="" class="img-element" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact-box">
+            <div class="contact-info">
+              <h3 class="title">Get in touch</h3>
+              <p class="text">
+                  I am still learning, Project idea? Contact me please
+              </p>
+              <div class="information-wrap">
+                <div class="information">
+                  <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <p class="info-text">Netherlands</p>
+                </div>
+
+                <div class="information">
+                  <div class="contact-icon">
+                    <i class="fas fa-paper-plane"></i>
+                  </div>
+                  <p class="info-text">erayprive19@gmail.com</p>
+                </div>
+
+                <div class="information">
+                  <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <p class="info-text">06-57737228</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form">
+              <h3 class="title">Contact me</h3>
+              <div class="row">
+                <input
+                  type="text"
+                  class="contact-input"
+                  placeholder="First Name"
+                />
+                <input
+                  type="text"
+                  class="contact-input"
+                  placeholder="Last Name"
+                />
+              </div>
+
+              <div class="row">
+                <input type="text" class="contact-input" placeholder="Phone" />
+                <input type="email" class="contact-input" placeholder="Email" />
+              </div>
+
+              <div class="row">
+                <textarea
+                  name="message"
+                  class="contact-input textarea"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <a href="#" class="btn">Send</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hireme" id="hireme">
+        <div class="container">
+          <h3 class="title">Let's talk about a project</h3>
+          <p class="text">
+          </p>
+          <a href="#" class="btn">Hire me</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="grid-4">
+          <div class="grid-4-col footer-about">
+            <h3 class="title-sm">About</h3>
+            <p class="text">
+                I hope you enjoyed my portfolio site please follow me on my links.
+            </p>
+          </div>
+
+          <div class="grid-4-col footer-links">
+            <h3 class="title-sm">Links</h3>
+            <ul>
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+
+
+          <div class="grid-4-col footer-newstletter">
+            <h3 class="title-sm">Follow me   -___-</h3>
+            <p class="text">
+              Enter E-mail
+            </p>
+            <div class="footer-input-wrap">
+              <input type="email" class="footer-input" placeholder="Email" />
+              <a href="#" class="input-arrow">
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-footer">
+          <div class="copyright">
+            <p class="text">
+              Copyright&copy;2021 All rights reserved | Made by
+              <span>Eray Siltu</span>
+            </p>
+          </div>
+
+          <div class="followme-wrap">
+            <div class="followme">
+              <h3>Follow me</h3>
+              <span class="footer-line"></span>
+              <div class="social-media">
+                <a href="https://www.facebook.com/eray.siltu">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="back-btn-wrap">
+              <a href="#" class="back-btn">
+                <i class="fas fa-chevron-up"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
-</body>
-</html>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./JS/animation.js"></script>
+  </body>
 </html>
